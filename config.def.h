@@ -78,7 +78,7 @@ static const struct arg args[] = {
     {temp, "|  %s°C ", "/sys/class/thermal/thermal_zone0/temp", 5, -1},
     {battery_state, "| BAT %s", "BAT1", -1, -1},
     {battery_perc, " %s%% ", "BAT1", 5, -1},
-    {datetime, "| %s |", "%F %T", 1, -1},
+    {datetime, "| %s |", "%F %H:%M", 60, -1},
 };
 
 /* maximum output string length */
