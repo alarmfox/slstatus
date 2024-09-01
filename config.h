@@ -38,7 +38,11 @@ static const char unknown_str[] = "n/a";
  *                     keymap
  * load_avg            load average                    NULL
  * netspeed_rx         receive network speed           interface name (wlan0)
+ * netspeed_rx_all     receive network speed for all   NULL
+ *                     interfaces
  * netspeed_tx         transfer network speed          interface name (wlan0)
+ * netspeed_tx_all     transfer network speed for all  NULL
+ *                     interfaces
  * num_files           number of files in a directory  path
  *                                                     (/home/foo/Inbox/cur)
  * ram_free            free memory in GB               NULL
@@ -74,7 +78,7 @@ static const struct arg args[] = {
     {temp, "|  %s°C ", "/sys/class/thermal/thermal_zone0/temp", 5, -1},
     {battery_state, "| BAT %s", "BAT1", -1, -1},
     {battery_perc, " %s%% ", "BAT1", 5, -1},
-    {datetime, "| %s |", "%F %T", 1, -1},
+    {datetime, "| %s |", "%F %H:%M", 60, -1},
 };
 
 /* maximum output string length */
