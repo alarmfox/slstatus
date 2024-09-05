@@ -70,9 +70,8 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
     /* function 		format          argument
        interval signal */
-
-    {netspeed_tx_all, " |  %sB/s", NULL, 3, -1},
-    {netspeed_rx_all, "  %sB/s ", NULL, 3, -1},
+    {netspeed_tx_all, " |  %sB/s", NULL, 2, -1},
+    {netspeed_rx_all, "  %sB/s ", NULL, 2, -1},
     {cpu_perc, "| CPU %s%% ", NULL, 5, -1},
     {ram_perc, " RAM %s%% ", NULL, 5, -1},
     {temp, "|  %s°C ", "/sys/class/thermal/thermal_zone0/temp", 5, -1},
